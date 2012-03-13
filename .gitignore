@@ -1,0 +1,4 @@
+vendor/*
+data/log/*
+data/cache/*
+composer.phar

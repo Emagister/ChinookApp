@@ -1,0 +1,25 @@
+{% spaceless %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %} - Chinook Application{% endblock %}</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% block stylesheets %}
+        <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap-responsive.min.css" />
+        {% endblock %}
+    </head>
+
+    <body>
+        {% block activeItem %}{% set activeItem = 1 %}{% endblock %}
+        {% include "menu.twig" with { 'activeItem': activeItem } %}
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+        {% block javascripts %}
+        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+        {% endblock %}
+    </body>
+</html>
+{% endspaceless %}
