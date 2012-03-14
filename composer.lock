@@ -1,10 +1,13 @@
 {
-    "hash": "c291be958823a616978a86873cf6481a",
+    "hash": "22c775856b20eb36ed1ff27ee8a30f3c",
     "packages": [
         {
             "package": "doctrine/common",
-            "version": "dev-master",
-            "source-reference": "ad2a3385ec88ae4f1c7456aa07a926e6376f219a"
+            "version": "2.2.1"
+        },
+        {
+            "package": "doctrine/dbal",
+            "version": "2.2.1"
         },
         {
             "package": "mockery/mockery",
