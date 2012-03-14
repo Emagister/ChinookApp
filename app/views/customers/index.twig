@@ -1,0 +1,38 @@
+{% extends 'layout.twig' %}
+
+{% block title %}Customers List{{ parent() }}{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Customers List <small>Chinook Web App</small></h1>
+</div>
+<div class="row">
+    <div class="span12">
+        <table id="customers" class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Company</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for customer in customers %}
+                    <tr>
+                        <td>{{ customer.FirstName }}</td>
+                        <td>{{ customer.LastName }}</td>
+                        <td>{{ customer.Company }}</td>
+                        <td>
+                            <a href="#" class="btn btn-primary">Edit</a>&nbsp;
+                            <a href="#" class="btn btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                {% else %}
+                    <tr><td colspan="4">No customers in the database!</td></tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

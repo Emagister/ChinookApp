@@ -1,0 +1,39 @@
+{% extends 'layout.twig' %}
+
+{% block title %}Add new customer{{ parent() }}{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Customer details <small>Chinook Web App</small></h1>
+</div>
+<div class="row">
+    <div class="span4">
+        <h2>Customer details</h2>
+        <p>Here is the customer details</p>
+    </div>
+    <div class="span8">
+        <dl>
+            <dt><h3>First name</h3></dt>
+            <dd>{{ customer.FirstName }}</dd>
+            <dt><h3>Last name</h3></dt>
+            <dd>{{ customer.LastName }}</dd>
+            <dt><h3>Company</h3></dt>
+            <dd>{{ customer.Company }}</dd>
+            <dt><h3>Address</h3></dt>
+            <dd>{{ customer.Address }}</dd>
+            <dt><h3>City</h3></dt>
+            <dd>{{ customer.City }}</dd>
+            <dt><h3>State</h3></dt>
+            <dd>{{ customer.State }}</dd>
+            <dt><h3>Country</h3></dt>
+            <dd>{{ customer.PostalCode }}</dd>
+            <dt><h3>Phone</h3></dt>
+            <dd>{{ customer.Phone }}</dd>
+            <dt><h3>Fax</h3></dt>
+            <dd>{{ customer.Fax }}</dd>
+            <dt><h3>Email</h3></dt>
+            <dd>{{ customer.Email }}</dd>
+        </dl>
+    </div>
+</div>
+{% endblock %}

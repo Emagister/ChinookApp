@@ -1,13 +1,13 @@
 <div class="navbar">
     <div class="navbar-inner">
         <div class="container">
-            <a class="brand" href="#">Chinook Application</a>
+            <a class="brand" href="{{ app.url_generator.generate('homepage') }}">Chinook Application</a>
             <ul class="nav">
-                <li class="dropdown"{% if activeItem is 1 %} class="active"{% endif %}>
+                <li class="dropdown"{% if activeItem == 1 %} class="active"{% endif %}>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Customers<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li class="active"><a href="#">List</a></li>
-                        <li><a href="#">Add new</a></li>
+                        <li><a href="{{ app.url_generator.generate('customers_list') }}">List</a></li>
+                        <li><a href="{{ app.url_generator.generate('customer_new') }}">Add new</a></li>
                     </ul>
                 </li>
             </ul>

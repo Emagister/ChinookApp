@@ -12,12 +12,13 @@
     </head>
 
     <body>
-        {% block activeItem %}{% set activeItem = 1 %}{% endblock %}
-        {% include "menu.twig" with { 'activeItem': activeItem } %}
+        {% set activeItem = 1 %}
+        {% block menu %}{% include "menu.twig" with { 'activeItem': activeItem } %}{% endblock %}
         <div class="container">
             {% block content %}{% endblock %}
         </div>
         {% block javascripts %}
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script type="text/javascript" src="/js/bootstrap.min.js"></script>
         {% endblock %}
     </body>

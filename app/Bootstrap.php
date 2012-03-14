@@ -10,6 +10,6 @@ class Bootstrap extends Chinook\Bootstrap
 
     protected function _initRoutes(Silex\Application $app)
     {
-        $app->mount('/', require dirname(__DIR__) . '/app/configs/routes.php');
+        require dirname(__DIR__) . '/app/configs/routes.php';
     }
 }
