@@ -17,15 +17,18 @@ class CustomerRepositoryTest extends PHPUnit_Extensions_Database_TestCase
     public function __construct($name = NULL, array $data = array(), $dataName = '')
     {
         $configuration = new Configuration();
+
         $params = array(
             'driver' => 'pdo_sqlite',
             'memory' => 'true'
         );
+
         /** @var $conn \Doctrine\DBAL\Connection */
         $conn = DriverManager::getConnection($params, $configuration);
 
         /** @var $schema \Doctrine\DBAL\Schema\Schema */
         $schema = $conn->getSchemaManager()->createSchema();
+
         /** @var $customersTable \Doctrine\DBAL\Schema\Table */
         $customersTable = $schema->createTable('Customer');
         $customersTable->addColumn('CustomerId', 'integer', array('notnull' => true));

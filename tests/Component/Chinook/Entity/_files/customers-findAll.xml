@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <dataset>
-    <Customer CustomerId="1" FirstName="Alexandra" LastName="Roberson" Address="C/Test" City="Test" State="Test" Country="Test" PostalCode="12345" Phone="123456789" Fax="123456789" Email="test@gmail.com" Company="Emagister.com" SupportRepId="1" />
-    <Customer CustomerId="2" FirstName="Hyatt" LastName="Harrel"       Address="C/Test" City="Test" State="Test" Country="Test" PostalCode="12345" Phone="123456789" Fax="123456789" Email="test@gmail.com" Company="Emagister.com" SupportRepId="2" />
-    <Customer CustomerId="3" FirstName="Lane" LastName="Aguirre"       Address="C/Test" City="Test" State="Test" Country="Test" PostalCode="12345" Phone="123456789" Fax="123456789" Email="test@gmail.com" Company="Emagister.com" SupportRepId="3" />
-    <Customer CustomerId="4" FirstName="Sarah" LastName="Cannon"       Address="C/Test" City="Test" State="Test" Country="Test" PostalCode="12345" Phone="123456789" Fax="123456789" Email="test@gmail.com" Company="Emagister.com" SupportRepId="4" />
-    <Customer CustomerId="5" FirstName="Nina" LastName="Frye"          Address="C/Test" City="Test" State="Test" Country="Test" PostalCode="12345" Phone="123456789" Fax="123456789" Email="test@gmail.com" Company="Emagister.com" SupportRepId="5" />
-    <Customer CustomerId="6" FirstName="Cassandra" LastName="Eaton"    Address="C/Test" City="Test" State="Test" Country="Test" PostalCode="12345" Phone="123456789" Fax="123456789" Email="test@gmail.com" Company="Emagister.com" SupportRepId="6" />
-    <Customer CustomerId="7" FirstName="Colin" LastName="Carson"       Address="C/Test" City="Test" State="Test" Country="Test" PostalCode="12345" Phone="123456789" Fax="123456789" Email="test@gmail.com" Company="Emagister.com" SupportRepId="7" />
-    <Customer CustomerId="8" FirstName="Charles" LastName="Cochran"    Address="C/Test" City="Test" State="Test" Country="Test" PostalCode="12345" Phone="123456789" Fax="123456789" Email="test@gmail.com" Company="Emagister.com" SupportRepId="8" />
-    <Customer CustomerId="9" FirstName="Aidan" LastName="Emerson"      Address="C/Test" City="Test" State="Test" Country="Test" PostalCode="12345" Phone="123456789" Fax="123456789" Email="test@gmail.com" Company="Emagister.com" SupportRepId="9" />
-    <Customer CustomerId="10" FirstName="Eleanor" LastName="Owen"      Address="C/Test" City="Test" State="Test" Country="Test" PostalCode="12345" Phone="123456789" Fax="123456789" Email="test@gmail.com" Company="Emagister.com" SupportRepId="10" />
+    <Customer FirstName="Alexandra" LastName="Roberson" Company="Emagister.com" />
+    <Customer FirstName="Hyatt"     LastName="Harrel"   Company="Emagister.com" />
+    <Customer FirstName="Lane"      LastName="Aguirre"  Company="Emagister.com" />
+    <Customer FirstName="Sarah"     LastName="Cannon"   Company="Emagister.com" />
+    <Customer FirstName="Nina"      LastName="Frye"     Company="Emagister.com" />
+    <Customer FirstName="Cassandra" LastName="Eaton"    Company="Emagister.com" />
+    <Customer FirstName="Colin"     LastName="Carson"   Company="Emagister.com" />
+    <Customer FirstName="Charles"   LastName="Cochran"  Company="Emagister.com" />
+    <Customer FirstName="Aidan"     LastName="Emerson"  Company="Emagister.com" />
+    <Customer FirstName="Eleanor"   LastName="Owen"     Company="Emagister.com" />
 </dataset>

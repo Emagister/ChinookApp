@@ -13,7 +13,7 @@ $app->get('/customers/{page}', function($page) use ($app) {
     $db = $app['db'];
     $customers = $db->createQueryBuilder()->select('*')
                                           ->from('Customer', 'c')
-                                          ->setFirstResult((($page - 1) * 10) + 1)
+                                          ->setFirstResult(($page - 1) * 10)
                                           ->setMaxResults(10)
                                           ->execute();
 
