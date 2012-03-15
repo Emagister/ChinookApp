@@ -11,7 +11,7 @@ $app->get('/', function() use ($app) {
 $app->get('/customers/{page}', function($page) use ($app) {
     /** @var $db \Doctrine\DBAL\Connection */
     $db = $app['db'];
-    $customers = $db->createQueryBuilder()->select('*')
+    $customers = $db->createQueryBuilder()->select('c.FirstName', 'c.LastName', 'c.Company')
                                           ->from('Customer', 'c')
                                           ->setFirstResult(($page - 1) * 10)
                                           ->setMaxResults(10)
