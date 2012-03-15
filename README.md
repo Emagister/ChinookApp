@@ -28,6 +28,7 @@ The dependencies are handled through composer, so composer must be downloaded an
 order to install all the deps
 
 ```sh
+> cd chinook-app
 > wget http://getcomposer.org/composer.phar
 > php composer.phar install
 ```
