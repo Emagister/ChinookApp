@@ -1,4 +1,5 @@
 vendor/*
-data/log/*
-data/cache/*
+app/data/log/*
+app/data/cache/*
 composer.phar
+bin/*
