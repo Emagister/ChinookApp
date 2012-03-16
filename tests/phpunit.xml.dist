@@ -9,4 +9,10 @@
             <directory>./</directory>
         </testsuite>
     </testsuites>
+
+	<listeners>
+	    <!-- A PHPUnit listener to tear down all the Mockery resources -->
+	    <listener class="\Mockery\Adapter\Phpunit\TestListener"
+	              file="../vendor/mockery/mockery/library/Mockery/Adapter/Phpunit/TestListener.php"></listener>
+	</listeners>
 </phpunit>
